@@ -109,15 +109,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
-    agentHeight: 2
+    agentRadius: 0.2
+    agentHeight: 0.5
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.06666667
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -125,7 +125,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 68f245ba67d22f546ae2ac3d82540201, type: 2}
 --- !u!4 &48857364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 0a8b150a8c98bd243960dcfc107d25bf,
@@ -642,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &290752738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4282,12 +4282,13 @@ GameObject:
   - component: {fileID: 2393427900830269386}
   - component: {fileID: 2230204360276337032}
   - component: {fileID: 8564169009728096433}
+  - component: {fileID: 8564169009728096434}
   m_Layer: 0
   m_Name: HouseInterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 95
   m_IsActive: 1
 --- !u!4 &111657361839816772
 Transform:
@@ -18217,6 +18218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6227736892224202148}
   - component: {fileID: 6227736892224202139}
+  - component: {fileID: 6227736892224202150}
   m_Layer: 0
   m_Name: Point Light (16)
   m_TagString: Untagged
@@ -18224,6 +18226,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6227736892224202150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227736892224202149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!108 &6227736892248069376
 Light:
   m_ObjectHideFlags: 0
@@ -19497,6 +19519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6227736893681819035}
   - component: {fileID: 6227736893681819034}
+  - component: {fileID: 6227736893681819045}
   m_Layer: 0
   m_Name: Point Light (10)
   m_TagString: Untagged
@@ -19504,6 +19527,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6227736893681819045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227736893681819044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!108 &6227736893696997624
 Light:
   m_ObjectHideFlags: 0
@@ -24211,13 +24254,27 @@ GameObject:
   - component: {fileID: 5006512736761870787}
   - component: {fileID: 4044710142529750005}
   - component: {fileID: 7718390322126667532}
+  - component: {fileID: 8296172667770112977}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 95
   m_IsActive: 1
+--- !u!65 &8296172667770112977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172667770112976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.013235, y: 0.08265543, z: 8.1532}
+  m_Center: {x: 0.042900085, y: -0.0003410224, z: 0.10679543}
 --- !u!1 &8296172667849818454
 GameObject:
   m_ObjectHideFlags: 0
@@ -25144,6 +25201,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8564169009728096434
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75691428251488146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -376186902562514169, guid: b46a848a5ea4d0f4d9784aaaff85e23a, type: 3}
 --- !u!1 &8577975762982217324
 GameObject:
   m_ObjectHideFlags: 0
